@@ -1,0 +1,14 @@
+﻿@model SklepSpozywczy3.Models.Product
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+<ul>
+    <li>Name : @Model.Name</li>
+    <li>Category : @Model.CategoryType.Name</li>
+    <li>Description : @Model.Description</li>
+    <li>Quantity : @Model.Quantity</li>
+</ul>
+

@@ -1,0 +1,16 @@
+﻿@model SklepSpozywczy3.Models.Customer
+
+@functions { 
+}
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>Name : @Model.Name</h2>
+<h2>Membership Type : @Model.MembershipType.Name</h2>
+@if (@Model.BirthDate.HasValue)
+{
+    <h2>Birth Date : @Model.BirthDate.Value.ToShortDateString()</h2>
+}
